@@ -7,8 +7,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import net.zylve.zutil.Main;
-
 public class Shout implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -21,10 +19,12 @@ public class Shout implements CommandExecutor {
         switch(player.getWorld().getName()) {
             case "world":
                 world = "the Overworld";
+                world += " (" + (int)player.getLocation().getX() / 8 + " " + (int)player.getLocation().getY() + " " + (int)player.getLocation().getZ() / 8 + " Nether)";
                 break;
 
             case "world_nether":
                 world = "the Nether";
+                world += " (" + (int)player.getLocation().getX() * 8 + " " + (int)player.getLocation().getY() + " " + (int)player.getLocation().getZ() * 8 + " Overworld)";
                 break;
 
             case "world_the_end":
@@ -36,15 +36,9 @@ public class Shout implements CommandExecutor {
                 break;
         }
 
-        String message = String.format("%s is at %d %d %d in %s!", player.getName(), (int)player.getLocation().getX(), (int)player.getLocation().getY(), (int)player.getLocation().getZ(), world);
+        String message = String.format("%s is at %d %d %d in %s", player.getName(), (int)player.getLocation().getX(), (int)player.getLocation().getY(), (int)player.getLocation().getZ(), world);
 
         Bukkit.broadcastMessage(ChatColor.LIGHT_PURPLE + message);
-        Bukkit.broadcastMessage(this.getClass().toString());
-
         return true;
-    }
-
-    public void Init(Main main) {
-        // main.getCommand(this.getClass().toString())
     }
 }
