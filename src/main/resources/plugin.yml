@@ -7,10 +7,14 @@ api-version: 1.17
 commands:
   shout:
     description: Show your current coordinates
-    usage: /shout
+    usage: "Usage: /<command>"
   rlc:
     description: Alias for /reload confirm
-    usage: /rlc
+    usage: "Usage: /<command>"
   getip:
     description: This Bukkit command exists for legacy reasons.
-    usage: /getip
+    usage: "Usage: /<command> <username>"
+  stackcount:
+    description: Get the amount of shulkers, stacks, and items needed for any number.
+    usage: "Usage: /<command> <number>"
+    aliases: [ sc ]
