@@ -1,9 +1,0 @@
-
-main: net.zylve.zutil.Main
-name: ZylveUtil
-version: 0.0.1
-
-commands:
-  shout:
-    description: Show your current coordinates
-    usage: /shout
