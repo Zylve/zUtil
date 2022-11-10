@@ -1,5 +1,6 @@
 package net.zylve.zutil.commands;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -15,7 +16,7 @@ public class GetIP implements CommandExecutor {
         }
 
         String message = String.format("The IP address of %s is %s", player.getName(), player.getAddress().getAddress().getHostAddress());
-        sender.sendMessage(ChatColor.RED + message);
+        Bukkit.broadcastMessage(ChatColor.RED + message);
         return true;
     }
 }
