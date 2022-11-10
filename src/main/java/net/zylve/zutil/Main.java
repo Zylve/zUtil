@@ -3,6 +3,7 @@ package net.zylve.zutil;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import net.zylve.zutil.commands.GetIP;
 import net.zylve.zutil.commands.ReloadConfirm;
 import net.zylve.zutil.commands.Shout;
 
@@ -14,6 +15,7 @@ public class Main extends JavaPlugin {
 
         this.getCommand("shout").setExecutor(new Shout());
         this.getCommand("rlc").setExecutor(new ReloadConfirm());
+        this.getCommand("getip").setExecutor(new GetIP());
     }
 
     @Override

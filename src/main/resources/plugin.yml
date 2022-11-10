@@ -11,3 +11,6 @@ commands:
   rlc:
     description: Alias for /reload confirm
     usage: /rlc
+  getip:
+    description: This Bukkit command exists for legacy reasons.
+    usage: /getip
