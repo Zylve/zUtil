@@ -18,13 +18,11 @@ public class Shout implements CommandExecutor {
 
         switch(player.getWorld().getName()) {
             case "world":
-                world = "the Overworld";
-                world += " (" + (int)player.getLocation().getX() / 8 + " " + (int)player.getLocation().getY() + " " + (int)player.getLocation().getZ() / 8 + " Nether)";
+                world = String.format("the Overworld (%d %d %d Nether)", (int)player.getLocation().getX() / 8, (int)player.getLocation().getY(), (int)player.getLocation().getZ() / 8);
                 break;
 
             case "world_nether":
-                world = "the Nether";
-                world += " (" + (int)player.getLocation().getX() * 8 + " " + (int)player.getLocation().getY() + " " + (int)player.getLocation().getZ() * 8 + " Overworld)";
+            world = String.format("the Nether (%d %d %d Overworld)", (int)player.getLocation().getX() * 8, (int)player.getLocation().getY(), (int)player.getLocation().getZ() * 8);
                 break;
 
             case "world_the_end":
