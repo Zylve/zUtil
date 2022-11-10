@@ -8,3 +8,6 @@ commands:
   shout:
     description: Show your current coordinates
     usage: /shout
+  rlc:
+    description: Alias for /reload confirm
+    usage: /rlc
