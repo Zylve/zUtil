@@ -34,7 +34,7 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info("Succesfully loaded ZylveUtil" + ChatColor.GREEN);
+        getLogger().info(ChatColor.GREEN + "Succesfully loaded ZylveUtil");
 
         RegisterCommands();
         RegisterEvents();
@@ -42,7 +42,7 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        getLogger().info("Succesfully unloaded Zylve Util" + ChatColor.GREEN);
+        getLogger().info(ChatColor.GREEN + "Succesfully unloaded Zylve Util");
     }
 
     private void RegisterCommands() {
