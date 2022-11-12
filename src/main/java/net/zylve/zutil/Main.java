@@ -32,6 +32,18 @@ public class Main extends JavaPlugin {
         }
     };
 
+    private void RegisterCommands() {
+        for(String key : Commands.keySet()) {
+            this.getCommand(key).setExecutor(Commands.get(key));
+        }
+    }
+
+    private void RegisterEvents() {
+        for(Listener l : Events) {
+            this.getServer().getPluginManager().registerEvents(l, this);
+        }
+    }
+
     @Override
     public void onEnable() {
         getLogger().info(ChatColor.GREEN + "Succesfully loaded ZylveUtil");
@@ -43,17 +55,5 @@ public class Main extends JavaPlugin {
     @Override
     public void onDisable() {
         getLogger().info(ChatColor.GREEN + "Succesfully unloaded Zylve Util");
-    }
-
-    private void RegisterCommands() {
-        for(String key : Commands.keySet()) {
-            this.getCommand(key).setExecutor(Commands.get(key));
-        }
-    }
-
-    private void RegisterEvents() {
-        for(Listener l : Events) {
-            this.getServer().getPluginManager().registerEvents(l, this);
-        }
     }
 }
