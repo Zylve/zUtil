@@ -16,6 +16,10 @@ import net.zylve.zutil.events.DeathLocation;
 
 public class Main extends JavaPlugin {
 
+    /*
+     * Add Commands and Events to a HashMap and HashSet.
+     * This makes it easier to add new Commands and events.
+     */
     private final HashMap<String, CommandExecutor> Commands = new HashMap<String, CommandExecutor>() {
         {
             put("shout", new Shout());
@@ -46,7 +50,7 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info(ChatColor.GREEN + "Succesfully loaded ZylveUtil");
+        getLogger().info(ChatColor.GREEN + "Succesfully loaded zUtil");
 
         RegisterCommands();
         RegisterEvents();
@@ -54,6 +58,6 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        getLogger().info(ChatColor.GREEN + "Succesfully unloaded Zylve Util");
+        getLogger().info(ChatColor.GREEN + "Succesfully unloaded zUtil");
     }
 }
