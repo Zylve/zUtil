@@ -34,6 +34,6 @@ public class DeathLocation implements Listener {
                 break;
         }
 
-        event.getEntity().getPlayer().sendMessage(append);
+        event.setDeathMessage(event.getDeathMessage() + append);
     }
 }
