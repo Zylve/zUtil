@@ -4,5 +4,5 @@
     ],
     "java.checkstyle.configuration": "${workspaceFolder}/checkstyle.xml",
     "java.checkstyle.version": "10.3.3",
-    "java.format.settings.url": ".vscode/java-formatter.xml",
+    "java.format.settings.url": "java-formatter.xml",
 }
