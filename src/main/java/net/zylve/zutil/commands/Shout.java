@@ -27,7 +27,7 @@ public class Shout implements CommandExecutor {
                 break;
 
             case "world_nether":
-            world = String.format("the Nether (%d %d %d Overworld)", x * 8, y, z * 8);
+                world = String.format("the Nether (%d %d %d Overworld)", x * 8, y, z * 8);
                 break;
 
             case "world_the_end":
