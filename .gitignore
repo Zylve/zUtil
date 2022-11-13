@@ -1,6 +1,2 @@
-# Gradle stuff
-.gradle
-
-# Build
-build
-target
+.gradle/
+build/
