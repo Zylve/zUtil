@@ -15,7 +15,6 @@ import net.zylve.zutil.commands.StackCount;
 import net.zylve.zutil.events.DeathLocation;
 
 public class Main extends JavaPlugin {
-
     /*
      * Add Commands and Events to a HashMap and HashSet.
      * This makes it easier to add new Commands and events.

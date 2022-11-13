@@ -18,19 +18,19 @@ public class DeathLocation implements Listener {
 
         switch(location.getWorld().getName()) {
             case "world":
-                append = String.format("You died at %d %d %d in the Overworld", x, y, z);
+                append = String.format(" at %d %d %d in the Overworld", x, y, z);
                 break;
 
             case "world_nether":
-                append = String.format("You died at %d %d %d in the Nether", x, y, z);
+                append = String.format(" at %d %d %d in the Nether", x, y, z);
                 break;
 
             case "world_the_end":
-                append = String.format("You died at %d %d %d in The End", x, y, z);
+                append = String.format(" at %d %d %d in The End", x, y, z);
                 break;
 
             default:
-                append = String.format("You died at %d %d %d in an unknown dimension", x, y, z);
+                append = String.format(" at %d %d %d in an unknown dimension", x, y, z);
                 break;
         }
 
