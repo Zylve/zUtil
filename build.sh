@@ -1,2 +1,2 @@
-mvn install
-mv target/zUtil-0.0.1.jar ../server/plugins/
+gradle build
+mv build/libs/*.jar ../server/plugins/
