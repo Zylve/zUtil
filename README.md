@@ -13,7 +13,7 @@ A spigot plugin with multiple utilities
  - JDK 17
  - Gradle
 ### Instructions
-Note that the `build.sh` script is made for my development environment and should not work for you unless you have the same exact project structure as me.
+Note that the `build.sh` script is made for my development environment and should not work for you unless you have the exact same project structure as me.
 #### Linux/MacOS
 ```bash
 $ git clone https://github.com/zylve/zutil.git
