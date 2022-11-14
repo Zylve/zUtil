@@ -18,3 +18,5 @@ commands:
     description: Get the amount of shulkers, stacks, and items needed for any number.
     usage: "Usage: /<command> <number>"
     aliases: [ sc ]
+  sudo:
+    description: le funny

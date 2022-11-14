@@ -3,6 +3,7 @@ package net.zylve.zutil;
 import java.util.HashMap;
 import java.util.HashSet;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Listener;
@@ -12,6 +13,7 @@ import net.zylve.zutil.commands.GetIP;
 import net.zylve.zutil.commands.ReloadConfirm;
 import net.zylve.zutil.commands.Shout;
 import net.zylve.zutil.commands.StackCount;
+import net.zylve.zutil.commands.Sudo;
 import net.zylve.zutil.events.DeathLocation;
 
 public class Main extends JavaPlugin {
@@ -22,6 +24,7 @@ public class Main extends JavaPlugin {
             put("getip", new GetIP());
             put("stackcount", new StackCount());
             put("sc", new StackCount());
+            put("sudo", new Sudo());
         }
     };
 
@@ -45,7 +48,7 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info(ChatColor.GREEN + "Succesfully loaded zUtil");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "Succesfully loaded zUtil");
 
         RegisterCommands();
         RegisterEvents();
@@ -53,6 +56,6 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        getLogger().info(ChatColor.GREEN + "Succesfully unloaded zUtil");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "Succesfully unloaded zUtil");
     }
 }
