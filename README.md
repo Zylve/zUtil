@@ -11,14 +11,12 @@ A spigot plugin with multiple utilities
  - A Spigot or Paper Minecraft server
  - Git
  - JDK 17
- - Gradle
 ### Instructions
-Note that the `build.sh` script is made for my development environment and should not work for you unless you have the same exact project structure as me.
 #### Linux/MacOS
 ```bash
 $ git clone https://github.com/zylve/zutil.git
 $ cd zutil
-$ gradle build
+$ ./build.sh [output folder] (defaults to ./compiledjars)
 ```
 You can find the jar file in the `build/libs` directory.
 #### Windows
@@ -26,6 +24,6 @@ Open a command prompt, and execute these commands
 ```bash
 git clone https://github.com/zylve/zutil.git
 cd zutil
-gradle build
+gradlew.bat build
 ```
 Your jar file will be in the `build/libs` folder. You can then move this to your `server/plugins` folder.

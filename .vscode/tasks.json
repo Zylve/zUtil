@@ -6,7 +6,7 @@
         {
             "label": "Build Project",
             "type": "shell",
-            "command": "./build.sh",
+            "command": "./build.sh ../server/plugins",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
