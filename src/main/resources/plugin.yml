@@ -1,6 +1,6 @@
 
 main: net.zylve.zutil.Main
-name: ZylveUtil
+name: zUtil
 version: 0.0.1
 api-version: 1.17
 
@@ -14,9 +14,13 @@ commands:
   getip:
     description: This Bukkit command exists for legacy reasons.
     usage: "Usage: /<command> <username>"
+  sudo:
+    description: le funny
   stackcount:
     description: Get the amount of shulkers, stacks, and items needed for any number.
     usage: "Usage: /<command> <number>"
     aliases: [ sc ]
-  sudo:
-    description: le funny
+  coordinatesconsent:
+    description: Manage who can get your coordinates
+    usage: "Usage /<command> [add|remove|list|clear]"
+    aliases: [ cc ]

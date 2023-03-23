@@ -25,7 +25,7 @@ public class StackCount implements CommandExecutor {
         try {
             items = Integer.parseUnsignedInt(args[0]);
         } catch(Exception e) {
-            sender.sendMessage(ChatColor.RED + "idk man that doesn't look like a number to me");
+            sender.sendMessage(ChatColor.RED + "Please input a number!");
             return false;
         }
 
